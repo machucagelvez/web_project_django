@@ -3,9 +3,9 @@ from django.urls import path
 from apps.main_app.views import home, services, store, blog, contact
 
 urlpatterns = [
-    path("", home, name="Inicio"),
-    path("services/", services, name="Servicios"),
-    path("store/", store, name="Tienda"),
-    path("blog/", blog, name="Blog"),
-    path("contact/", contact, name="Contacto"),
+    path("", home, name="home"),
+    path("services/", services, name="services"),
+    path("store/", store, name="store"),
+    path("blog/", blog, name="blog"),
+    path("contact/", contact, name="contact"),
 ]
