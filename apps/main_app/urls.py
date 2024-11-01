@@ -1,11 +1,16 @@
 from django.urls import path
 
-from apps.main_app.views import home, services, store, blog, contact
+from apps.main_app.views import home, store, blog, contact
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path("", home, name="home"),
-    path("services/", services, name="services"),
     path("store/", store, name="store"),
     path("blog/", blog, name="blog"),
     path("contact/", contact, name="contact"),
 ]
+
+# Incluye dentro de urlpatterns la ruta para los archivos estáticos (carpeta media)
+# Esto es para que se puedan acceder a los archivos de la carpeta media desde el panel de administración o desde la URL
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

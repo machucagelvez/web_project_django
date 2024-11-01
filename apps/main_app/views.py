@@ -7,10 +7,6 @@ def home(request):
     return render(request, "main_app/home.html")
 
 
-def services(request):
-    return render(request, "main_app/services.html")
-
-
 def store(request):
     return render(request, "main_app/store.html")
 

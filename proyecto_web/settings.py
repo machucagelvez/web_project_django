@@ -127,6 +127,10 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+# Media files
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
 # La ubicación por default de static cambia al crear la carpeta apps
 # Se debe indicar la ruta en la que se encuentran los archivos:
 STATICFILES_DIRS = [

@@ -1,0 +1,11 @@
+{% extends 'main_app/base.html' %} {% load static %} {% block content %}
+
+<!--  -->
+{% for service in services %}
+<div>
+  <h2 style="color: aliceblue">{{ service.title }}</h2>
+  <p style="color: aliceblue">{{ service.content }}</p>
+  <img src="{{ service.image.url }}" alt="" />
+</div>
+{% endfor %} {% endblock %}
+C:\ds\django\proyecto_web\apps\services_app\templates\services\services.html
