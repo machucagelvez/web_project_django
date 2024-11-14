@@ -1,13 +1,12 @@
 from django.urls import path
 
-from apps.main_app.views import home, store, blog, contact
+from apps.main_app.views import home, store, contact
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path("", home, name="home"),
     path("store/", store, name="store"),
-    path("blog/", blog, name="blog"),
     path("contact/", contact, name="contact"),
 ]
 
