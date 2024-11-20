@@ -9,7 +9,3 @@ def home(request):
 
 def store(request):
     return render(request, "main_app/store.html")
-
-
-def contact(request):
-    return render(request, "main_app/contact.html")
