@@ -279,3 +279,11 @@ ul.errorlist {
 .categoryLink:hover {
   text-decoration: none;
 }
+
+.form-container {
+  background-color: rgb(0, 160, 253);
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 1px 0px;
+}

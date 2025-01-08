@@ -1,8 +1,14 @@
 {% extends 'main_app/base.html' %} {% load static %} {% block content %}
 
 <!-- Contact Section -->
-<div style="color: white">
-  <p>{{contact_form}}</p>
+<div class="form-container">
+  <form action="" method="post" style="text-align: center">
+    {% csrf_token %}
+    <table style="color: white" margin="20px auto">
+      {{contact_form.as_table}}
+    </table>
+    <input type="submit" value="Enviar" style="width: 150px" />
+  </form>
 </div>
 
 {% endblock content %}
